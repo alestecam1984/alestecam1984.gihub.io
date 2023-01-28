@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&family=Roboto+Mono:ital,wght@0,400;0,500;0,600;1,300&family=Unbounded:wght@200;300;400;500;600&display=swap');
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Oswald', sans-serif;
+}
+body
+{
+	background: #f5f5f5;
+	/*background: lightblue;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+.container
+{
+	position: relative;
+	width: 100%;
+	min-height: 1000px;
+	max-width: 1000px;
+	background: #fff;
+	display: grid;
+	margin: 50px;
+	grid-template-columns: 1fr 2fr;
+	box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+.izquierda
+{
+	position: relative;
+	background: #e79931;
+	padding: 40PX;
+}
+
+.izquierda .perfil
+{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 20px;
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.izquierda .perfil .imagen
+{
+	position: relative;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.izquierda .perfil .imagen img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.izquierda .perfil h2
+{
+	color: #fff;
+	font-size: 1.5em;
+	margin-top: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 600;
+	line-height: 1.4em;
+}
+
+.izquierda .perfil h2 span
+{
+	font-size: 0.8em;
+	font-weight: 300;
+}
+.informacion
+{
+	position: relative;
+}
+.title
+{
+	background-color: #4d4d4d;
+	padding: 10px;
+	color: #333;
+	text-align: left;
+	padding-left: 20px;
+	margin-right: -15px;
+}
+.title::after
+{
+	content: '';
+	position: absolute;
+	width: 21px;
+	height: 18px;
+	background-color: #5a5959;
+	left: 191px;
+	top: 26px;
+	transform: rotate(56deg);
+	z-index: -1;
+}
+.perfil
+{
+	padding-top: 40px;
+}
+.title
+{
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+}
+.informacion ul
+{
+	position: relative;
+}
+.informacion ul li
+{
+	position: relative;
+	list-style: none;
+	margin: 10px 0;
+	cursor: pointer;
+}
+.informacion ul li span.icon
+{
+	display: inline-block;
+	width: 30px;
+	font-size: 18px;
+	color: #03a9f4;
+}
+.informacion ul li span
+{
+	color: #fff;
+	font-size: 16px;
+	font-weight: 300;
+}
+.estudios li
+{
+	margin-bottom: 15px;
+}
+.estudios h5
+{
+	color: #010d13;
+	font-weight: 500;
+}
+.estudios h4:nth-child(2)
+{
+	color: #fff;
+	font-weight: 500;
+}
+.estudios h4
+{
+	color: #fff;
+	font-weight: 300;
+}
+.lenguaje .percent
+{
+	position: relative;
+	width: 100%;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	height: 6px;
+	background: #edf0f1;
+	display: block;
+	overflow: hidden;
+}
+.lenguaje .percent div
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: #161616;
+}
+.derecha
+{
+	position: relative;
+	background: #fff;
+	padding: 40PX;
+}
+.acerca
+{
+	margin-bottom: 50px;
+}
+.acerca:last-child
+{
+	margin-bottom: 0;
+}
+.title2
+{
+	color: #003147;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+}
+p
+{
+	color: #333;
+}
+
+.acerca .box
+{
+	display: flex;
+	flex-direction: row;
+	margin: 20px 0;
+}
+.acerca .box .year_company
+{
+	min-width: 150px;
+	margin-bottom: 10px;
+}
+.acerca .box .year_company h5
+{
+	text-transform: uppercase;
+	color: #848c90;
+	font-weight: 600;
+}
+.acerca .box .text h4
+{
+	text-transform: uppercase;
+	color: #2a7da2;
+	font-size: 16px;
+}
+
+
+.pasatiempos .box
+{
+	position: relative;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 150px 1fr;
+	justify-content: center;
+	align-items: center;
+}
+.pasatiempos .box h4
+{
+	text-transform: uppercase;
+	color: #848c99;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.pasatiempos .box .percent
+{
+	position: relative;
+	width: 100%;
+	height: 10px;
+	background: #f0f0f0;
+}
+.pasatiempos .box .percent div
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: #eb8705;
+}
+
+.distraccion ul
+{
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+}
+.distraccion ul li
+{
+	list-style: none;
+	color: #333;
+	font-weight: 500;
+	margin: 10px 0;
+}
+.distraccion ul li .fa
+{
+	color: #03a9f4;
+	font-size: 18px;
+	width: 20px;
+
+}
+
+
+@media (max-width: 1000px)
+{
+	.container
+	{
+		margin: 10px;
+	    grid-template-columns: repeat(1,1fr);
+	}
+	.distraccion ul
+	{
+		grid-template-columns: repeat(2,1fr);
+	}
+}
+@media (max-width: 600px)
+{
+	.acerca .box
+	{
+	    flex-direction: column;
+	}
+	.distraccion ul
+	{
+		grid-template-columns: repeat(1,1fr);
+	}
+	.distraccion .box
+	{
+    	grid-template-columns: repeat(1,1fr);
+	}
+}
